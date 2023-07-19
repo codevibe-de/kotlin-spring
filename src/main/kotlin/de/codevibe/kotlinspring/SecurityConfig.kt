@@ -19,6 +19,7 @@ class SecurityConfig {
                 authorize("/**", permitAll)
             }
             httpBasic {}
+            csrf { disable() }
         }
         return http.build()
     }

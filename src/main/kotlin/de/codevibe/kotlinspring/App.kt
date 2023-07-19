@@ -4,8 +4,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class KotlinSpringTestApplication
+class App {
+    companion object {
+        const val API_ROOT = "/v1"
+    }
+}
 
 fun main(args: Array<String>) {
-    runApplication<KotlinSpringTestApplication>(*args)
+    runApplication<App>(*args)
 }
